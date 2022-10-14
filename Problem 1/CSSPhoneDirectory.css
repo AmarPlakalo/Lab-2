@@ -7,5 +7,28 @@
 
 #form_for_adding_contact
 {
-	margin-top:250px;
+	margin-top:200px;
+}
+
+#contact_list
+{
+	border:1px solid black;
+	border-collapse:collapse;
+}
+
+tr,td,th
+{
+	border:1px solid black;
+}
+
+#div_for_contacts_table
+{
+	display:flex;
+	align-items:center;
+	justify-content:center;
+}
+
+#table_with_contacts_child_div
+{
+	margin-top:50px;
 }
