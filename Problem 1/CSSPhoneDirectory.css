@@ -1,0 +1,11 @@
+#div_for_adding_contact
+{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#form_for_adding_contact
+{
+	margin-top:250px;
+}
