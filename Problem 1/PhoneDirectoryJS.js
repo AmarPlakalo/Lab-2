@@ -48,7 +48,7 @@ function add_contact()
 
 function mobile_phone_search() 
 {
-	var input = document.getElementById("search");
+	var input = document.getElementById("mobile_search");
 	
 	var table = document.getElementById("contact_list");
 	
