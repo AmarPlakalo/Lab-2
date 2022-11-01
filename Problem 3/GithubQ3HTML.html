@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Web application for querying user information from the Github API</title>
+	<link rel="stylesheet" href="GithubQ3CSS.css">
+</head>
+
+<body>
+	<div>
+		<input type="text" id="username" name="username" placeholder="Username">
+		<button type="button" id="search_button" onclick="get_user_data_from_github()">Search</button>
+		
+		<br><br><br>
+		
+		<div id="container_for_user_profile_and_repo_tables">
+		
+			<div id="div_for_user_profile_table">
+			
+				<label id="user_profile_label"><b>User Profile</b></label>
+				
+				<table id="user_profile_table">
+					<thead>
+						<tr>
+							<th id="profile_label_for_avatar">Avatar: <p id="avatar"></p></th>
+						</tr>
+						<tr>
+							<th id="profile_label_for_name">Name: <p id="first_name"></p></th>
+						</tr>
+						<tr>
+							<th id="profile_label_for_uname">Username: <p id="uname"></p></th>
+						</tr>
+						<tr>
+							<th id="profile_label_for_email">Email: <p id="email"></p></th>
+						</tr>
+						<tr>
+							<th id="profile_label_for_location">Location: <p id="location"></p></th>
+						</tr>
+						<tr>
+							<th id="profile_label_for_gists">Number of Gists: <p id="no_of_gists"></p></th>
+						</tr>
+					</thead>
+				</table>
+			</div>
+			
+			<div id="div_for_user_repo_table">
+			
+				<label id="user_repo_label"><b>User Repos</b></label>
+				
+				<table id="user_repo_table">
+				
+					<thead>
+						
+					</thead>
+				</table>
+			</div>
+		</div>
+
+	</div>
+	<script src="GithubQ3JS.js"></script>
+</body>
+</html>
