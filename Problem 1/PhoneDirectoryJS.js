@@ -1,28 +1,24 @@
 function add_contact()
-{
-	var x = document.forms["contact_form"]["mobile"].value;
-	var y = document.forms["contact_form"]["name"].value;
-	var z = document.forms["contact_form"]["email"].value;
+{	
+	var name = document.getElementById('name').value;
+	var mobile = document.getElementById('mobile').value;
+	var email = document.getElementById('email').value;
 	
-	if (x.length != 10) 
+	if (mobile.length != 10) 
 	{
 		alert("Mobile number needs to be 10 digits long");
 		return false;
 	}
 	
-	if (/^[A-Za-z\s]*$/.test(y) == false)
+	if (/^[A-Za-z\s]*$/.test(name) == false)
 	{
 		alert("Name isn't valid. The name can only contain alphabets and spaces");
 		return false;
 	}
 	
-	var name = document.getElementById('name').value;
-	var mobile = document.getElementById('mobile').value;
-	var email = document.getElementById('email').value;
+	var contact_list_table = document.getElementById('contact_list').getElementsByTagName('tbody')[0];
 	
-	var tableRef = document.getElementById('contact_list').getElementsByTagName('tbody')[0];
-	
-	var row = tableRef.insertRow();
+	var row = contact_list_table.insertRow();
 	
 	var cell1 = row.insertCell(0);
 	var cell2 = row.insertCell(1);
@@ -54,11 +50,7 @@ function mobile_phone_search()
 	
 	var tr = table.getElementsByTagName("tr");
 	
-	var td;
-	
-	var cell;
-	
-	var i;
+	var td,cell,i;
 	
 	for (i = 1; i < tr.length; i++) 
 	{
