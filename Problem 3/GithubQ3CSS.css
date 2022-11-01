@@ -1,0 +1,66 @@
+#username
+{
+	font-size:20px;
+	margin-left:100px;
+}
+
+#search_button
+{
+	font-size:20px;
+	border-radius:10px;
+}
+
+#user_profile_label
+{
+	font-size:17px;
+}
+
+#user_repo_label
+{
+	font-size:17px;
+}
+
+#user_profile_table
+{
+	border:1px solid black;
+	border-collapse:collapse;
+}
+
+tr,td,th
+{
+	border:1px solid black;
+}
+
+#container_for_user_profile_and_repo_tables
+{
+	display:flex;
+}
+
+#user_repo_table
+{
+	border:1px solid black;
+	border-collapse:collapse;
+}
+
+#div_for_user_profile_table
+{
+	flex: 1;
+	margin-left:100px;
+}
+
+#div_for_user_repo_table
+{
+	flex: 1;
+	margin-right:800px;
+}
+
+
+#profile_label_for_avatar, #profile_label_for_name, #profile_label_for_uname, #profile_label_for_email, #profile_label_for_location, #profile_label_for_gists
+{
+	color:red;
+}
+
+#avatar, #first_name, #uname, #email, #location, #no_of_gists
+{
+	color:black;
+}
